@@ -35,10 +35,6 @@ receiver.channels.dinggroup | Array | N | 告警接收钉钉机器人，每个it
 receiver.channels.dinggroup.*.webhook | String | N | 钉钉机器人webhook的access_token的值
 receiver.channels.dinggroup.*.secret | String | N | 钉钉机器人安全设置中加密下面一行的密钥
 receiver.channels.dingworker | Array | N | 钉钉工作通知，用户工号列表，不带前面数字0，比如01写为1
-receiver.channels.yachgroup | Array | N | 告警接收知音楼机器人，每个item为 webhook 和 secret 的配置
-receiver.channels.yachgroup.*.webhook | String | N | 知音楼机器人webhook的access_token字段的值
-receiver.channels.yachgroup.*.secret | String | N | 知音楼机器人密钥
-receiver.channels.yachworker | Array | N | 知音楼工作通知，用户工号列表，不带前面数字0，比如01写为1
 receiver.channels.email | Array | N | 邮件通知，用户工号列表，不带前面数字0，比如01写为1
 receiver.channels.sms | Array | N | 短信通知，用户工号列表，不带前面数字0，比如01写为1
 receiver.channels.phone | Array | N | 电话通知，用户工号列表，不带前面数字0，比如01写为1
@@ -68,16 +64,6 @@ receiver.channels.webhook | String | N | Webhook通知，必须以http/https协�
                 }
             ],
             "dingworker": [
-                98333,
-                33333
-            ],
-            "yachgroup": [
-                {
-                    "webhook": "xxxxxxxxxxxxxxxxxx",
-                    "secret": "XXXXXXXXXXXXXXXXXXX"
-                }
-            ],
-            "yachworker": [
                 98333,
                 33333
             ],
